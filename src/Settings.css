@@ -1,0 +1,57 @@
+.DialogContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.BackDrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgb(116 116 116 / 41%);
+}
+
+.Dialog {
+  z-index: 10;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 500px;
+  transform: translateX(-50%);
+  background-color: var(--color-canvas-subtle);
+  border: 1px solid var(--color-border-default);
+  color: var(--color-fg-default);
+  border-radius: 20px;
+  padding: 0.5rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dialog input,
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--color-fg-muted);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.Dialog textarea {
+  height: 80px;
+}
+
+.Dialog .ButtonContainer {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
