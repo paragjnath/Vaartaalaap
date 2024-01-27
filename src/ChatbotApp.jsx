@@ -141,7 +141,7 @@ const ChatbotApp = (props) => {
             className={loading ? 'action-btn loading' : 'action-btn'}
             type="submit"
           >
-            <img src={SendIcon} />
+            <img src={SendIcon} alt="send button" />
           </button>
         </form>
       </div>
