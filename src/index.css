@@ -46,6 +46,9 @@ code {
   background-color: var(--color-canvas-subtle);
   border: 1px solid var(--color-border-muted);
   border-radius: 6px;
+  box-sizing: border-box;
+  flex: 1;
+  max-width: 180px;
 }
 
 .chatContainer {

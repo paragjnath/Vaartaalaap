@@ -33,6 +33,14 @@
   flex-direction: column;
 }
 
+@media only screen and (max-width: 600px) {
+  .Dialog {
+    top: 30px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+}
+
 .Dialog input,
 textarea {
   display: block;
@@ -54,4 +62,20 @@ textarea {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+}
+
+.SettingsButton {
+  background-color: #ff7f00;
+  box-sizing: border-box;
+  border: 1px solid var(--color-border-default);
+  border-radius: 8px;
+  padding: 6px 8px 4px 8px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.SettingsButton img {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
 }

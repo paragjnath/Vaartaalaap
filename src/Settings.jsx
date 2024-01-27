@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Settings.css';
 
+import SettingsIcon from './settingsIcon.png';
+
 const Settings = (props) => {
   const { onSave, baseURL, defaultSystemPrompt } = props;
   const [show, setShow] = useState(false);
@@ -57,7 +59,11 @@ const Settings = (props) => {
       </div>
     );
   }
-  return <button onClick={handleClick}>Settings</button>;
+  return (
+    <button onClick={handleClick} className="SettingsButton">
+      <img src={SettingsIcon} alt="send button" />
+    </button>
+  );
 };
 
 export default Settings;
