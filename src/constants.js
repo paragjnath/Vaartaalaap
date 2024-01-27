@@ -5,7 +5,7 @@ export function getDefaultSystemPromptName() {
 export function getSystemPrompt(name, defaultPrompt) {
   if (name === getDefaultSystemPromptName()) {
     return defaultPrompt;
-  } else return chatGPTPrompts.find((prompt) => prompt.name === name);
+  } else return chatGPTPrompts.find((prompt) => prompt.name === name)?.content;
 }
 
 export const chatGPTPrompts = [
