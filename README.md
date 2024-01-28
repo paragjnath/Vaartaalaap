@@ -23,9 +23,11 @@ This is a chatbot application designed to work with large language models (LLMs)
    - **Install Tailscale**: Download and install Tailscale on both your computer and mobile device.
    - **Set up Tailscale**: Follow Tailscale's setup instructions to create a secure network.You need to enable HTTPS if you are using this application from a hosted server.
    - **Get the URL for the device**: Find the URL of your computer on the Tailscale network.
+   - **Share your local server within your tailnet**: First generate SSL certificate using `tailscale cert` . After that share your server using `tailscale serve --bg 1234` (here 1234 is the port).
+   
 
 3. **Configure the Chatbot Application**:
-   - **Update Base URL**: In the chatbot application's settings, change the base URL to the ngrok URL or the local IP provided by Tailscale.
+   - **Update Base URL**: In the chatbot application's settings, change the base URL to the ngrok URL or the URL provided by Tailscale.
 
 4. **Access on Mobile**:
    - Open the application "https://vaartaalaap.thousandfeeds.com/". To use this application with a local LLM server via `ngrok` or `Tailscale`, you need to update the base URL in the application's settings.
