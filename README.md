@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+This is a chatbot application designed to work with large language models (LLMs) servers that behaves like OpenAI's API. The customizable base URL in the settings allows the user to point the application to the desired local server where the LLM is hosted. This setup is beneficial for those who have their own LLM setup or server, enabling direct interaction with the model through a user-friendly interface provided by the chatbot application
 
-## Available Scripts
+## Live Link
+ "https://vaartaalaap.thousandfeeds.com/".
 
-In the project directory, you can run:
+## Features
+- **Dynamic Base URL**: Configure the base URL for the chatbot's backend, supporting different environments like development or production.
+- **Customizable Prompts**: Modify the default system prompt to tailor the chatbot's behavior.
 
-### `npm start`
+## Usage
+1. **Installation**: Clone the repository and install dependencies using `npm install`
+2. **Running the App**: Start the application with `npm start`.Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Customization**: Use the settings dialog to customize the base URL and default system prompt.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## To use the chatbot application on mobile via `ngrok` or `Tailscale`, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Set Up the Local Server**: First, ensure your chatbot and LLM server is running locally on your computer.
 
-### `npm test`
+2. **Using ngrok**:
+   - **Install ngrok**: Download and install ngrok on your computer.
+   - **Start ngrok**: Run ngrok to expose a local server port (e.g., if your local server is running on port 1234, use `ngrok http 1234`).
+   - **Get the ngrok URL**: ngrok provides a public URL (e.g., `https://12345.ngrok.io`). Copy this URL.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Using Tailscale**:
+   - **Install Tailscale**: Download and install Tailscale on both your computer and mobile device.
+   - **Set up Tailscale**: Follow Tailscale's setup instructions to create a secure network.
+   - **Get the Local IP**: Find the local IP address of your computer on the Tailscale network.
 
-### `npm run build`
+4. **Configure the Chatbot Application**:
+   - **Update Base URL**: In the chatbot application's settings, change the base URL to the ngrok URL or the local IP provided by Tailscale.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **Access on Mobile**:
+   - Open the application "http://vaartaalaap.thousandfeeds.com/". To use this application with a local LLM server via `ngrok` or `Tailscale`, you need to update the base URL in the application's settings.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Navigate to the settings section of the Vaartaalaap application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - Replace the current base URL with the URL provided by ngrok (e.g., `https://12345.ngrok.io`) or the local IP address from Tailscale. 
 
-### `npm run eject`
+   -  After updating the base URL, save your changes to ensure the application connects to your local server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Now, the application should be configured to communicate with your local LLM server, and you can use it from your mobile device.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Remember, ngrok exposes your local server to the internet, so be cautious about security.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contribution
+Contributions to enhance the application are welcome. Follow standard coding practices and submit pull requests for review.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Remember to check the `src` directory for detailed code structure and additional components.
