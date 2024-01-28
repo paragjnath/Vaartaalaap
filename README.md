@@ -4,7 +4,7 @@
 This is a chatbot application designed to work with large language models (LLMs) servers that behaves like OpenAI's API. The customizable base URL in the settings allows the user to point the application to the desired local server where the LLM is hosted. This setup is beneficial for those who have their own LLM setup or server, enabling direct interaction with the model through a user-friendly interface provided by the chatbot application
 
 ## Live Link
- "https://vaartaalaap.thousandfeeds.com/".
+ "http://vaartaalaap.thousandfeeds.com/".
 
 ## Features
 - **Dynamic Base URL**: Configure the base URL for the chatbot's backend, supporting different environments like development or production.
